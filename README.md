@@ -1,116 +1,44 @@
-# SingSaver Blog Prototype v9
+# SingSaver Blog Cross-Sell IA Prototype
 
-Password-protected interactive prototype for blog redesign.
+Interactive prototype for the **SingSaver Blog Cross-Selling Information Architecture** — Pattern 1 (Decision/Comparison) blog template.
 
-## 🔐 Password
+🔒 **Password Protected** — Enter the shared password to view.
 
-**Password:** `The-Future-Blog`
+## Quick Start
 
-Share this with your team members to access the prototype.
+Open `index.html` in any browser. No build step needed.
 
----
+**GitHub Pages:** Settings → Pages → Branch: main, / (root) → Save
 
-## 📦 Files Included
+## Editor Mode
 
-1. **index.html** - Main page with password protection
-2. **prototype.js** - React component with blog + presentation deck
-3. **README.md** - This file
+Toggle **"Editor Mode"** (bottom-right) to reveal editorial guidance panels on each new component. Click any **NEW** tag to expand:
 
----
+- **📌 Why this exists** — the user behaviour insight behind the component
+- **✏️ What to write** — specific editorial guidance
+- **⚠️ If we skip this** — what we lose (framed as missed opportunity)
+- **⏱ Effort** — realistic time estimate
 
-## 🚀 Deployment Instructions
+## Content Structure: 3-Layer Bridge Model
 
-### Step 1: Create New GitHub Repository
+| Layer | Purpose | New Components |
+|-------|---------|----------------|
+| **Layer 1** — Answer the Question | Deliver what the user searched for | Quick Summary |
+| **Decision Guide** _(fork)_ | Route users by situation | Decision Guide |
+| **Layer 2** — Expand Consideration | Surface alternatives | Expert Take |
+| **Layer 3** — Convert | Drive action | Saver-Savvy Tip, Compare CTA |
 
-1. Go to [github.com](https://github.com)
-2. Click **"New repository"** (green button)
-3. Name it: `singsaver-prototype` (or any name you prefer)
-4. Set to **Private** (recommended for password-protected content)
-5. ✅ Check "Add a README file"
-6. Click **"Create repository"**
+## Design System
 
-### Step 2: Upload Files
+Built with **MHG Alpha Design System** tokens (Albert Sans, brand `#0d7a9f`, gray scale). Styled to match [singsaver.com.sg](https://www.singsaver.com.sg/banking/blog/best-fixed-deposit-singapore).
 
-1. In your new repository, click **"Add file"** → **"Upload files"**
-2. Upload these 2 files:
-   - `index.html`
-   - `prototype.js`
-3. Write commit message: "Initial commit - Blog prototype v9"
-4. Click **"Commit changes"**
+## Files
 
-### Step 3: Enable GitHub Pages
+```
+├── index.html      ← Open this (standalone)
+├── src/App.jsx     ← Source React component
+├── README.md
+└── .gitignore
+```
 
-1. Click **"Settings"** (top menu)
-2. Click **"Pages"** (left sidebar under "Code and automation")
-3. Under **"Source"**, select:
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-4. Click **"Save"**
-
-### Step 4: Wait for Deployment
-
-- GitHub will take 2-5 minutes to deploy
-- Refresh the Pages settings page
-- You'll see: **"Your site is live at https://YOUR-USERNAME.github.io/singsaver-prototype/"**
-
-### Step 5: Share the Link
-
-Copy the live URL and share with your team along with the password: `The-Future-Blog`
-
----
-
-## 🔗 How to Access
-
-1. Open the live link
-2. Enter password: `The-Future-Blog`
-3. Click "Access Prototype"
-4. Toggle between:
-   - 📝 **Blog Prototype** - Full blog with 14 banks
-   - 🎯 **Presentation Deck** - Strategy slides
-
----
-
-## 🔒 Security Notes
-
-- Password is stored in browser session (client-side protection)
-- Use Private repository if you want additional GitHub access control
-- Password remains active until browser tab is closed
-- Share password separately from the link for better security
-
----
-
-## 📱 Features
-
-✅ Responsive design (mobile, tablet, desktop)  
-✅ SVG SingSaver logo  
-✅ 8 banks shown initially (expandable to 14)  
-✅ Quick Answer with anchor scrolling  
-✅ MHG Alpha navigation  
-✅ Password protection  
-
----
-
-## 🛠️ Troubleshooting
-
-**Blank page?**
-- Wait 5 minutes after deployment
-- Hard refresh: Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac)
-- Check GitHub Actions tab for deployment status
-
-**Password not working?**
-- Make sure it's exactly: `The-Future-Blog` (case-sensitive)
-- Clear browser cache and try again
-
-**Still having issues?**
-- Check browser console (F12) for errors
-- Ensure both `index.html` and `prototype.js` are uploaded
-- Verify GitHub Pages is enabled in Settings
-
----
-
-## 📞 Support
-
-For questions or issues, contact the development team.
-
-**Version:** v9  
-**Last Updated:** March 2026
+_Internal prototype · MHG Alpha Design System · Feb 2026_
